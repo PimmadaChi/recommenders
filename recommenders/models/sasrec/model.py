@@ -839,5 +839,5 @@ class SASREC(tf.keras.Model):
                 NDCG += 1 / np.log2(rank + 2)
                 HT += 1
                 
-        return prediction, rank
+        return predictions, rank
         #return NDCG / valid_user, HT / valid_user
